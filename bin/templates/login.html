@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
 
-</body>
+        <meta charset="utf-8" />
+
+        <title>Login</title>
+ 		
+
+
+    </head>
+
+    <body>
+    
+<p th:utext="#{index.welcome(${today})}">Welcome to our grocery store!</p>  
+ 
+<p>Today is: <span th:text="${today}">13 February 2011</span></p>
+
+     <form role="form" th:action="@{/loginIndex}" method="post" class="login-form">
+     		 						
+
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="form-password">Password</label>
+			                        	<input type="password" name="password"  placeholder="Password..." class="form-password form-control" id="form-password" />
+			                        </div>
+			                        <button type="submit" class="btn">&nbsp;</button>
+			                    </form>
+
+
+    </body>
+
 </html>
+

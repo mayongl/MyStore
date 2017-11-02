@@ -13,6 +13,7 @@ public class MainController {
 	public ModelAndView login() {
 		ModelAndView ma = new ModelAndView("login");
 		ma.addObject("login", "true");
+		ma.addObject("today", "2017");
 		return ma;
 	}
 	

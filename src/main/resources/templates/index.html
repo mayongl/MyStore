@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html>
-    <head>
-
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-        <title>index</title>
-
-
-    </head>
-
-    <body>
-
-    </body>
-
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Good Thymes Virtual Grocery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" media="all"
+href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />
+</head>
+<body>
+<p th:utext="#{index.welcome}">Welcome to our grocery store!</p>
+<p>Today is: <span th:text="${today}">13 February 2011</span></p>
+</body>
 </html>
-
